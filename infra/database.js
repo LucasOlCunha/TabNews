@@ -34,5 +34,5 @@ export default {
 };
 
 function getSSLValues() {
-  const getSSLValues = process.env.NODE_ENV === "production" ? true : false;
+  return process.env.NODE_ENV === "production";
 }
